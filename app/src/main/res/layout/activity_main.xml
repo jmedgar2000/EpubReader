@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:background="#EEEEEE">
+
+        <Button android:id="@+id/btnOpen" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Abrir"/>
+        <Button android:id="@+id/btnSample" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Ejemplo"/>
+        <TextView android:id="@+id/label" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:gravity="center" android:text="-"/>
+        <Button android:id="@+id/btnPrev" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="&#9664;"/>
+        <Button android:id="@+id/btnNext" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="&#9654;"/>
+    </LinearLayout>
+</LinearLayout>
